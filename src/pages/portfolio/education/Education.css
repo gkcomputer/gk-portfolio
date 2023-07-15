@@ -2,7 +2,16 @@
   margin-top: -1px;
   background-color: rgb(15, 44, 68);
 }
+.vertical-timeline-element-content {
+  background: #5e97c7c9;
+}
 
+.vertical-timeline * {
+  color: floralwhite;
+}
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  color: floralwhite;
+}
 /* body {
   font-family: "Montserrat", sans-serif;
 }

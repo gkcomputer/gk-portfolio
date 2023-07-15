@@ -1,7 +1,4 @@
 import React from "react";
-import github from "../../assests/Github-desktop.svg";
-import linkedin from "../../assests/LinkedIn_icon.svg";
-import mail from "../../assests/Gmail_icon.svg";
 import "./LandingPage.css";
 import profile from "../../assests/profile_pic.jpg";
 import { useRef, useEffect } from "react";
@@ -9,6 +6,9 @@ import { gsap } from "gsap";
 import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from "gsap/all";
 import { Typewriter } from "react-simple-typewriter";
 import { Tilt } from "react-tilt";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 gsap.registerPlugin(CSSPlugin);
 
@@ -31,7 +31,7 @@ function LandingPage() {
         icons,
         { x: -10, scale: 1, opacity: 0 },
         {
-          duration: 2,
+          duration: 1.5,
           x: 30,
           opacity: 1,
           ease: "bounce",
@@ -41,31 +41,31 @@ function LandingPage() {
       .fromTo(
         n,
         { x: 90, scale: 1, opacity: 0 },
-        { x: 0, opacity: 1, ease: "back", duration: 2 },
+        { x: 0, opacity: 1, ease: "back", duration: 1.5 },
         "<1"
       )
       .fromTo(
         dev,
         { x: -90, scale: 1, opacity: 0 },
-        { x: 0, opacity: 1, ease: "back", duration: 2 },
+        { x: 0, opacity: 1, ease: "back", duration: 1.5 },
         "<1"
       )
       .fromTo(
         p,
         { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 2, ease: "bounce" },
+        { y: 0, opacity: 1, duration: 1.5, ease: "bounce" },
         "<1"
       )
       .fromTo(
         bton,
         { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 2, ease: "bounce" },
+        { y: 0, opacity: 1, duration: 1.5, ease: "bounce" },
         "<1"
       )
       .fromTo(
         prof.current,
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, ease: "elastic", duration: 2 },
+        { y: 0, opacity: 1, ease: "elastic", duration: 1.5 },
         "<"
       );
   });
@@ -98,13 +98,13 @@ function LandingPage() {
           <div className="details">
             <div ref={name} className="name">
               <h1>
-                Hi I'm <span style={{ color: "rgb(54,77,121)" }}>Krishna</span>
+                Hi I'm <span>Krishna</span>
               </h1>
             </div>
             <div ref={developer} className="developer">
               <p>
                 FrontEnd Dev :{" "}
-                <span style={{ fontWeight: "bold", color: "rgb(54,77,121)" }}>
+                <span>
                   <Typewriter
                     words={["HTML", "CSS", "JAVA SCRIPT", "REACT"]}
                     loop={true}
@@ -142,30 +142,22 @@ function LandingPage() {
                 </svg>
                 <span>CONTACT ME</span>
               </button>
+            </div>
+            <div className="socialIcons">
+              <GitHubIcon
+                ref={(el) => (social.current[0] = el)}
+                sx={{ color: "rgb(16,204,254)", position: "unset" }}
+              />
 
-              <div className="socialIcons">
-                <img
-                  ref={(el) => (social.current[0] = el)}
-                  src={github}
-                  alt=""
-                  width="20px"
-                  onMouseEnter={(el) => {
-                    gsap.to(el.current, { scale: 1 });
-                  }}
-                />
-                <img
-                  ref={(el) => (social.current[1] = el)}
-                  src={linkedin}
-                  alt=""
-                  width="20px"
-                />
-                <img
-                  ref={(el) => (social.current[2] = el)}
-                  src={mail}
-                  alt=""
-                  width="20px"
-                />
-              </div>
+              <LinkedInIcon
+                ref={(el) => (social.current[1] = el)}
+                sx={{ color: "rgb(16,204,254)", position: "unset" }}
+              />
+
+              <EmailIcon
+                ref={(el) => (social.current[2] = el)}
+                sx={{ color: "rgb(16,204,254)", position: "unset" }}
+              />
             </div>
           </div>
 

@@ -7,7 +7,8 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <body>
+    <div id="projects" className="projectdiv">
+      <h1>PROJECTS</h1>
       <div class="projectcontainer">
         <div class="card">
           <div class="face face1">
@@ -89,28 +90,8 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src={form_login} />
-              <h3>Form</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                cum cumque minus iste veritatis provident at.
-              </p>
-              <div class="face2buttons">
-                <Button variant="outlined">Code</Button>
-                <Button variant="outlined">Demo</Button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </body>
+    </div>
   );
 }
 

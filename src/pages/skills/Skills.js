@@ -7,7 +7,9 @@ import reactlogo from "../../assests/react_png.png";
 
 function Skills() {
   return (
-    <div className={classes.skillsprogressbar}>
+    <div id="skills" className={classes.skillsprogressbar}>
+      <h1>SKILLS</h1>
+
       <div className={classes.skills}>
         <h2>HTML</h2>
         <div className={classes.flex}>

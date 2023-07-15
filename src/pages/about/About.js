@@ -4,19 +4,18 @@ export const About = () => {
   return (
     <div id="about" className="aboutdiv">
       <div className="aboutText">
-        <p>About</p>
+        <h1>ABOUT</h1>
       </div>
       <div className="paragraph">
         I am a highly motivated and dedicated professional with a passion for
-        [industry/field]. With [number] years of experience in [specific skills
-        or expertise], I possess a solid understanding of [relevant knowledge or
-        technologies]. I am committed to delivering exceptional results and
-        thrive in fast-paced and challenging environments. Throughout my career,
-        I have demonstrated strong [key skills or qualities], including
-        [examples of skills or qualities]. I am a proactive problem solver and
-        enjoy taking on new challenges to expand my skill set. I work well both
+        Developing Applications. With 3.5 years of experience in IT feild, I
+        possess a solid understanding of Frontend technologies. I am committed
+        to delivering exceptional results and thrive in fast-paced and
+        challenging environments. Throughout my career, I have demonstrated
+        strong Html,Css,JS,React. I am a proactive problem solver and enjoy
+        taking on new challenges to expand my skill set. I work well both
         independently and collaboratively, and I am always eager to learn from
-        others. In addition to my technical expertise, I have excellent
+        others.
       </div>
     </div>
   );

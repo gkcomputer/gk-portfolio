@@ -1,22 +1,30 @@
-.contactdiv {
+/* .contactdiv {
   width: 100%;
-  /* height: 90vh; */
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background-color: rgb(15, 44, 68);
   margin-top: -1px;
+} */
+
+.contactdiv h1 {
+  color: rgb(16, 204, 254);
 }
 .mail {
   display: flex;
   gap: 10px;
+}
+.mail h6 {
+  color: floralwhite;
 }
 .leftdiv {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 60px;
+  margin-bottom: 10px;
 }
 .rightdiv {
   width: 40%;
@@ -34,10 +42,24 @@
   text-align: center;
   justify-content: center;
 }
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: whitesmoke !important;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: floralwhite !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: floralwhite !important;
+}
 @media (max-width: 918px) {
+  .contactmain {
+    width: 100%;
+  }
+
   .contactdiv {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -50,5 +72,23 @@
   .rightdiv {
     width: 80%;
     margin-bottom: 10px;
+  }
+}
+@media (min-width: 919px) {
+  .contactmain {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(15, 44, 68);
+  }
+
+  .contactdiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(15, 44, 68);
+    margin-top: -1px;
   }
 }

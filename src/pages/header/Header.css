@@ -28,6 +28,7 @@ body {
 .menu a {
   color: whitesmoke;
   text-decoration: none;
+  font-size: large;
 }
 .logo {
   width: 30px;

@@ -8,7 +8,7 @@ function Portfolio() {
   const [education, setEducation] = useState(true);
   const [professional, setProfessional] = useState(false);
   return (
-    <div className="portdiv">
+    <div id="education" className="portdiv">
       <div className="selecthead">
         <p
           onClick={() => {
@@ -16,7 +16,7 @@ function Portfolio() {
             setProfessional(false);
           }}
         >
-          Education Details
+          Education
         </p>
         <p
           onClick={() => {
@@ -24,7 +24,7 @@ function Portfolio() {
             setEducation(false);
           }}
         >
-          Professional Details
+          Experience
         </p>
       </div>
       {education ? <Eductaion /> : null}

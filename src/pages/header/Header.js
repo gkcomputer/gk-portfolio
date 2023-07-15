@@ -49,13 +49,6 @@ function Header() {
 
         <div class="menu">
           <a
-            ref={(el) => {
-              menu.current[0] = el;
-            }}
-          >
-            Home
-          </a>
-          <a
             href="#about"
             ref={(el) => {
               menu.current[1] = el;
@@ -64,15 +57,33 @@ function Header() {
             About
           </a>
           <a
+            href="#education"
             ref={(el) => {
               menu.current[2] = el;
+            }}
+          >
+            Education
+          </a>
+          <a
+            href="#skills"
+            ref={(el) => {
+              menu.current[3] = el;
+            }}
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            ref={(el) => {
+              menu.current[4] = el;
             }}
           >
             Projects
           </a>
           <a
+            href="#contact"
             ref={(el) => {
-              menu.current[3] = el;
+              menu.current[0] = el;
             }}
           >
             Contact

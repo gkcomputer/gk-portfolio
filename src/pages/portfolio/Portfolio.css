@@ -16,8 +16,8 @@
   font-size: inherit;
 }
 .selecthead p {
-  text-shadow: 0px 1px 10px #08faf5;
-  color: #194f4e;
+  text-decoration: underline;
+  color: rgb(16, 204, 254);
 }
 
 @media (max-width: 918px) {
@@ -28,10 +28,5 @@
     align-items: center;
     background-color: rgb(15, 44, 68);
     gap: 20px;
-  }
-
-  .selecthead p {
-    margin-top: 10px;
-    color: #194f4e;
   }
 }

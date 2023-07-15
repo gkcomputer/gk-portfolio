@@ -1,23 +1,25 @@
 import React from "react";
 import "./Contact.css";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import send_icon from "../../assests/send_icon.svg";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PhoneIcon from "@mui/icons-material/Phone";
 import phone_icon from "../../assests/phone.png";
 import { Button, TextField } from "@mui/material";
 
 function Contact() {
   return (
-    <div>
+    <div id="contact" className="contactmain">
       <div className="contactdiv">
         <div className="leftdiv">
           <h1>Contact Me</h1>
           <div className="mail">
-            <img src={send_icon} alt="send-icon" width="20px" />
-            <p> @gamil.com</p>
+            <MailOutlineIcon
+              sx={{ position: "unset", color: "rgb(16, 204, 254)" }}
+            />
+            <h6> mvgkrishna96@gmail.com</h6>
           </div>
           <div className="mail">
-            <img src={phone_icon} alt="send-icon" width="20px" />
-            <p>+91-9160008500</p>
+            <PhoneIcon sx={{ position: "unset", color: "rgb(16, 204, 254)" }} />
+            <h6>+91-9515197516</h6>
           </div>
           <div className="cvbtn">
             <Button
@@ -36,6 +38,7 @@ function Contact() {
             fullWidth
             label="Name"
             variant="outlined"
+            color="primary"
           />
           <TextField
             id="outlined-basic"
