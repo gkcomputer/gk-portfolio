@@ -47,7 +47,7 @@ function Skills() {
         </div>
       </div>
       {/* ********************************************* */}
-      <div>
+      {/* <div>
         <div class="circularcontainer">
           <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -85,7 +85,7 @@ function Skills() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

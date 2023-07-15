@@ -1,11 +1,12 @@
 .contactdiv {
   width: 100%;
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background-color: rgb(15, 44, 68);
+  margin-top: -1px;
 }
 .mail {
   display: flex;
@@ -32,4 +33,22 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+@media (max-width: 918px) {
+  .contactdiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(15, 44, 68);
+  }
+  .leftdiv {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .rightdiv {
+    width: 80%;
+    margin-bottom: 10px;
+  }
 }

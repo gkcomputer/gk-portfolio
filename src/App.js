@@ -16,11 +16,11 @@ function App() {
       {/* <Headsidenav /> */}
       <LandingPage />
       <About />
-      {/* <Portfolio /> */}
+      <Portfolio />
       {/* <Personalskills /> */}
-      {/* <Skills /> */}
-      {/* <Projects /> */}
-      {/* <Contact /> */}
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }

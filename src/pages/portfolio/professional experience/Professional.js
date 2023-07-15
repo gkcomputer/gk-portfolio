@@ -10,11 +10,12 @@ import {
 } from "react-vertical-timeline-component";
 
 function Professional() {
+  const isMobile = window.innerWidth >= 918;
   let workIconStyles = { background: "rgb(15, 44, 68)" };
   let schoolIconStyles = { background: "rgb(15, 44, 68)" };
   return (
     <div className="portfolio">
-      <VerticalTimeline>
+      <VerticalTimeline layout={isMobile ? "2-columns" : "1-column-left"}>
         {protimelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
           let showButton =

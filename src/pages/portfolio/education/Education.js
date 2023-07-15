@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "react-vertical-timeline-component/style.min.css";
 import "./Education.css";
 import SchoolIcon from "@mui/icons-material/School";
@@ -10,11 +10,18 @@ import {
 } from "react-vertical-timeline-component";
 
 function Eductaion() {
+  const isMobile = window.innerWidth >= 918;
+  console.log("ismobile", isMobile);
   let workIconStyles = { background: "rgb(15, 44, 68)" };
   let schoolIconStyles = { background: "rgb(15, 44, 68)" };
+  console.log("width", window.innerWidth);
+
   return (
     <div className="educationdiv">
-      <VerticalTimeline style={{ width: "60px" }}>
+      <VerticalTimeline
+        style={{ width: "60px" }}
+        layout={isMobile ? "2-columns" : "1-column-left"}
+      >
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
           let showButton =

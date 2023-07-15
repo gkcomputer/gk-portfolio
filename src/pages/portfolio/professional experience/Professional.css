@@ -1,8 +1,13 @@
-body {
+.portfolio {
+  background-color: darkgray;
+  background-color: rgb(15, 44, 68);
+}
+
+/* body {
   font-family: "Montserrat", sans-serif;
 }
 .portfolio {
-  /* background-color: darkgray; */
+  background-color: darkgray;
   background-color: rgb(15, 44, 68);
 }
 
@@ -51,13 +56,13 @@ h3 {
 
 .schoolButton:hover {
   background-color: #f3bc3c;
-}
+} */
 
-@media (max-width: 1700px) {
+/* @media (max-width: 1700px) {
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
     color: rgb(44, 44, 44);
     margin-top: 1.5em;
   }
-}
+} */
