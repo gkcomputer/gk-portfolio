@@ -1,3 +1,25 @@
 html {
   scroll-behavior: smooth;
 }
+.scrolltop {
+  height: 50px;
+  width: 50px;
+  background-color: antiquewhite;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out transform;
+}
+
+.scrolltop a {
+  margin-top: 9px;
+}
+.scrolltop:hover {
+  transform: scale(1);
+}

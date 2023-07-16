@@ -29,10 +29,10 @@ body {
 .developer p span {
   color: rgb(16, 204, 254);
 }
-.intro p {
+.intro {
   color: whitesmoke;
   font-size: large;
-  word-spacing: 5px;
+  word-spacing: 3px;
 }
 
 .details {

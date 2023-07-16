@@ -26,6 +26,7 @@ function LandingPage() {
     const p = para.current;
     const bton = button.current;
     const timeline = new TimelineMax();
+
     timeline
       .fromTo(
         icons,
@@ -70,15 +71,6 @@ function LandingPage() {
       );
   });
 
-  // const flipCover = (event) => {
-  //   const pic = prof.current;
-  //   if (event === "enter") {
-  //     gsap.to(pic, { rotationY: -360, duration: 5 });
-  //   } else {
-  //     gsap.to(pic, { rotationY: 360, duration: 5 });
-  //   }
-  // };
-
   const defaultOptions = {
     reverse: false, // reverse the tilt direction
     max: 40, // max tilt rotation (degrees)
@@ -93,7 +85,7 @@ function LandingPage() {
 
   return (
     <>
-      <div className="landingdiv">
+      <div id="home" className="landingdiv">
         <div className="about-image">
           <div className="details">
             <div ref={name} className="name">
@@ -118,10 +110,8 @@ function LandingPage() {
               </p>
             </div>
             <div ref={para} className="intro">
-              <p>
-                High level experience in web desgin and development knowledge,
-                producing quality work.
-              </p>
+              High level experience in web desgin and development knowledge,
+              producing quality work.
             </div>
             <div ref={button} className="contactme">
               <button class="btn">
@@ -146,7 +136,10 @@ function LandingPage() {
             <div className="socialIcons">
               <GitHubIcon
                 ref={(el) => (social.current[0] = el)}
-                sx={{ color: "rgb(16,204,254)", position: "unset" }}
+                sx={{
+                  color: "rgb(16,204,254)",
+                  position: "unset",
+                }}
               />
 
               <LinkedInIcon
@@ -161,16 +154,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <div
-            ref={prof}
-            // onMouseEnter={() => {
-            //   flipCover("enter");
-            // }}
-            // onMouseLeave={() => {
-            //   flipCover("leave");
-            // }}
-            className="profile-picture"
-          >
+          <div ref={prof} className="profile-picture">
             <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
               <img src={profile} alt="" width="200px" />
             </Tilt>

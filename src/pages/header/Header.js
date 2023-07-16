@@ -5,16 +5,13 @@ import { gsap } from "gsap";
 import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 import logo from "../../assests/gk_logo.png";
-import { useDispatch, useSelector } from "react-redux";
-import { sidenav } from "../../store/actions/Headsidenav.action";
+import TemporaryDrawer from "./Headsidenav";
 
 //without this line, PixiPlugin and MotionPathPlugin may get dropped by your bundler (tree shaking)...
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 function Header() {
   let header = useRef(null);
   let menu = useRef([]);
-
-  const dispatch = useDispatch();
 
   useEffect(() => {
     gsap.fromTo(
@@ -51,7 +48,7 @@ function Header() {
           <a
             href="#about"
             ref={(el) => {
-              menu.current[1] = el;
+              menu.current[0] = el;
             }}
           >
             About
@@ -59,7 +56,7 @@ function Header() {
           <a
             href="#education"
             ref={(el) => {
-              menu.current[2] = el;
+              menu.current[1] = el;
             }}
           >
             Education
@@ -67,7 +64,7 @@ function Header() {
           <a
             href="#skills"
             ref={(el) => {
-              menu.current[3] = el;
+              menu.current[2] = el;
             }}
           >
             Skills
@@ -75,7 +72,7 @@ function Header() {
           <a
             href="#projects"
             ref={(el) => {
-              menu.current[4] = el;
+              menu.current[3] = el;
             }}
           >
             Projects
@@ -83,21 +80,14 @@ function Header() {
           <a
             href="#contact"
             ref={(el) => {
-              menu.current[0] = el;
+              menu.current[4] = el;
             }}
           >
             Contact
           </a>
         </div>
-        <div
-          className="hamburger"
-          onClick={() => {
-            dispatch(sidenav());
-          }}
-        >
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+        <div className="burgerdiv">
+          <TemporaryDrawer />
         </div>
       </div>
     </>

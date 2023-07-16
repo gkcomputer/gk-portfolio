@@ -2,22 +2,24 @@ import "./App.css";
 import { About } from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Header from "./pages/header/Header";
-import Headsidenav from "./pages/header/Headsidenav";
 import LandingPage from "./pages/landing/LandingPage";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Projects from "./pages/projects/Projects";
-import Personalskills from "./pages/skills/Personalskills";
 import Skills from "./pages/skills/Skills";
+import toparrow from "./assests/top_arrow.png";
 
 function App() {
   return (
     <div className="App">
+      <div className="scrolltop">
+        <a href="#home">
+          <img src={toparrow} alt="" width="40px" />
+        </a>
+      </div>
       <Header />
-      {/* <Headsidenav /> */}
       <LandingPage />
       <About />
       <Portfolio />
-      {/* <Personalskills /> */}
       <Skills />
       <Projects />
       <Contact />

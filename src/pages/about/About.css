@@ -32,8 +32,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: bounceInDown 2s;
+  animation: bounceInDown 1s;
 }
+
 .aboutText h1 {
   color: rgb(16, 204, 254);
 }

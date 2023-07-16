@@ -45,11 +45,20 @@ body {
   .menu {
     display: none;
   }
+  .burgerdiv {
+    display: block;
+  }
 }
 
 /* executes from 921px */
 @media (min-width: 920px) {
   .hamburger {
+    display: none;
+  }
+  .burgerdiv {
+    display: none;
+  }
+  .css-1u2w381-MuiModal-root-MuiDrawer-root {
     display: none;
   }
 }
