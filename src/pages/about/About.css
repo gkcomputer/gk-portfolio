@@ -38,6 +38,9 @@
 .aboutText h1 {
   color: rgb(16, 204, 254);
 }
+.heightClss {
+  height: 1000px;
+}
 
 @media (max-width: 918px) {
   .aboutdiv {

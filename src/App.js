@@ -10,7 +10,7 @@ import toparrow from "./assests/top_arrow.png";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <div className="scrolltop">
         <a href="#home">
           <img src={toparrow} alt="" width="40px" />
@@ -23,7 +23,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 }
 

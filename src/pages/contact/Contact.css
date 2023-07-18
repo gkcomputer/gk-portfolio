@@ -16,6 +16,10 @@
   display: flex;
   gap: 10px;
 }
+.mail a {
+  cursor: pointer;
+  text-decoration: none;
+}
 .mail h6 {
   color: floralwhite;
 }
@@ -24,8 +28,9 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
+
 .rightdiv {
   width: 40%;
   display: flex;
@@ -51,6 +56,13 @@
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
   color: floralwhite !important;
 }
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+  color: white !important;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgb(16 204 254) !important;
+}
+
 @media (max-width: 918px) {
   .contactmain {
     width: 100%;

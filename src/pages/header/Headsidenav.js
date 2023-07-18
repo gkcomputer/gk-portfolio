@@ -40,37 +40,37 @@ export default function TemporaryDrawer(props) {
       >
         <a
           href="#home"
-          style={{ color: "rgb(8,102,127)", textDecoration: "none" }}
+          style={{ color: "rgb(16,204,254)", textDecoration: "none" }}
         >
           Home
         </a>
         <a
           href="#about"
-          style={{ color: "rgb(8,102,127)", textDecoration: "none" }}
+          style={{ color: "rgb(16,204,254)", textDecoration: "none" }}
         >
           About
         </a>
         <a
-          href="#education"
-          style={{ color: "rgb(8,102,127)", textDecoration: "none" }}
+          href="#portfolio"
+          style={{ color: "rgb(16,204,254)", textDecoration: "none" }}
         >
           Education
         </a>
         <a
           href="#skills"
-          style={{ color: "rgb(8,102,127)", textDecoration: "none" }}
+          style={{ color: "rgb(16,204,254)", textDecoration: "none" }}
         >
           Skills
         </a>
         <a
           href="#projects"
-          style={{ color: "rgb(8,102,127)", textDecoration: "none" }}
+          style={{ color: "rgb(16,204,254)", textDecoration: "none" }}
         >
           Projects
         </a>
         <a
           href="#contact"
-          style={{ color: "rgb(8,102,127)", textDecoration: "none" }}
+          style={{ color: "rgb(16,204,254)", textDecoration: "none" }}
         >
           Contact
         </a>

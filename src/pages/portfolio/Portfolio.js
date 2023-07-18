@@ -8,7 +8,7 @@ function Portfolio() {
   const [education, setEducation] = useState(true);
   const [professional, setProfessional] = useState(false);
   return (
-    <div id="education" className="portdiv">
+    <div id="portfolio" className="portdiv">
       <div className="selecthead">
         <p
           onClick={() => {

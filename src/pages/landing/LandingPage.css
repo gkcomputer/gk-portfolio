@@ -112,6 +112,11 @@ svg {
   font-weight: 100;
 }
 
+.contactme a {
+  text-decoration: none;
+  color: floralwhite;
+}
+
 @media (max-width: 918px) {
   .about-image {
     display: flex;
