@@ -14,12 +14,16 @@
   justify-content: center;
   align-items: center;
   text-align: justify;
+}
+
+.para {
   animation: para 2s;
 }
+
 @keyframes para {
   0% {
     opacity: 0;
-    line-height: 60px;
+    line-height: 90px;
   }
 
   100% {
@@ -29,10 +33,10 @@
 }
 
 .aboutText {
+  /* margin: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: bounceInDown 1s;
 }
 
 .aboutText h1 {
@@ -64,6 +68,9 @@
   }
 }
 
+.text {
+  animation: bounceInDown 1s;
+}
 @keyframes bounceInDown {
   from,
   60%,

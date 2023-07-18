@@ -137,6 +137,9 @@ function LandingPage() {
             </div>
             <div className="socialIcons">
               <GitHubIcon
+                onClick={() => {
+                  window.open("https://github.com/gkcomputer");
+                }}
                 ref={(el) => (social.current[0] = el)}
                 sx={{
                   color: "rgb(16,204,254)",
@@ -150,6 +153,11 @@ function LandingPage() {
               />
 
               <EmailIcon
+                onClick={() => {
+                  window.open(
+                    "https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBncMdTcSwDJkXKRsmrlMcJhjNSBKgTgKlcFrqHGdZjWPZmRQWbZjGPQbbXBVSWBCHVhPlg"
+                  );
+                }}
                 ref={(el) => (social.current[2] = el)}
                 sx={{ color: "rgb(16,204,254)", position: "unset" }}
               />

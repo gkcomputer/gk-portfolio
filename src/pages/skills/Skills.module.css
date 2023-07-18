@@ -46,29 +46,76 @@
   height: 4px;
   border-radius: 5px;
   background: rgb(251, 128, 40);
-  animation: html 1s linear forwards;
 }
 .cssprogress {
   width: 0%;
   height: 4px;
   border-radius: 5px;
   background: rgb(36, 101, 241);
-  animation: css 1s linear forwards;
 }
 .jsprogress {
   width: 0%;
   height: 4px;
   border-radius: 5px;
   background: rgb(212, 184, 48);
-  animation: js 1s linear forwards;
 }
 .reactprogress {
   width: 0%;
   height: 4px;
   border-radius: 5px;
   background: rgb(55, 130, 158);
-  animation: react 1s linear forwards;
 }
+.skillstext {
+  animation: bounceInDown 1s;
+}
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0) scaleY(3);
+  }
+
+  60% {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0) scaleY(0.9);
+  }
+
+  75% {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    opacity: 0.5;
+    transform: translate3d(0, 5px, 0) scaleY(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.htmlanimation {
+  animation: html 1.5s linear forwards;
+}
+.cssanimation {
+  animation: css 1.5s linear forwards;
+}
+.jsanimation {
+  animation: js 1.5s linear forwards;
+}
+.reactanimation {
+  animation: react 1.5s linear forwards;
+}
+
 @keyframes html {
   100% {
     width: 85%;

@@ -7,10 +7,10 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
 
 function Contact() {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -55,11 +55,18 @@ function Contact() {
       <div className="contactdiv">
         <div className="leftdiv">
           <h1>Contact Me</h1>
-          <div className="mail">
+          <div
+            className="mail"
+            onClick={() => {
+              window.open(
+                "https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBncMdTcSwDJkXKRsmrlMcJhjNSBKgTgKlcFrqHGdZjWPZmRQWbZjGPQbbXBVSWBCHVhPlg"
+              );
+            }}
+          >
             <MailOutlineIcon
               sx={{ position: "unset", color: "rgb(16, 204, 254)" }}
             />
-            <a href="mailto: mvgkrishna96@gmail.com">
+            <a>
               <h6> mvgkrishna96@gmail.com</h6>
             </a>
           </div>
@@ -73,7 +80,7 @@ function Contact() {
             <Button
               color="primary"
               size="small"
-              variant="contained"
+              variant="outlined"
               sx={{ width: "130px" }}
             >
               Download CV
@@ -86,8 +93,8 @@ function Contact() {
             fullWidth
             label="Name"
             variant="outlined"
-            color="primary"
             name="from_name"
+            required
           />
           <TextField
             id="outlined-basic"
@@ -96,6 +103,7 @@ function Contact() {
             type="email"
             variant="outlined"
             name="from_name"
+            required
           />
           <TextField
             fullWidth
@@ -104,11 +112,12 @@ function Contact() {
             multiline
             rows={4}
             name="message"
+            required
           />
           <Button
             color="primary"
             size="small"
-            variant="contained"
+            variant="outlined"
             sx={{ width: "130px" }}
             type="submit"
           >
