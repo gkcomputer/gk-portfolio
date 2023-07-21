@@ -1,6 +1,6 @@
 .skillsprogressbar {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,6 +136,9 @@
     width: 75%;
   }
 }
+.skillsprogressbar {
+  background-color: rgb(15, 44, 68);
+}
 
 @media (max-width: 918px) {
   .skillsprogressbar {
@@ -147,7 +150,7 @@
     margin-top: -1px;
   }
 }
-@media (min-width: 919px) {
+@media (min-width: 1100px) {
   .skillsprogressbar {
     width: 100%;
     height: 100vh;

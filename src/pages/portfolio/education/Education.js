@@ -11,10 +11,8 @@ import {
 
 function Eductaion() {
   const isMobile = window.innerWidth >= 918;
-  console.log("ismobile", isMobile);
   let workIconStyles = { background: "rgb(15, 44, 68)" };
   let schoolIconStyles = { background: "rgb(15, 44, 68)" };
-  console.log("width", window.innerWidth);
 
   return (
     <div className="educationdiv">

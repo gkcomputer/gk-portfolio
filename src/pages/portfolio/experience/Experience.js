@@ -1,6 +1,6 @@
 import React from "react";
 import "react-vertical-timeline-component/style.min.css";
-import "./Professional.css";
+import "./Experience.css";
 import SchoolIcon from "@mui/icons-material/School";
 import protimelineElements from "./TimelineElements";
 import WorkIcon from "@mui/icons-material/Work";
@@ -9,12 +9,12 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-function Professional() {
+function Experience() {
   const isMobile = window.innerWidth >= 918;
   let workIconStyles = { background: "rgb(15, 44, 68)" };
   let schoolIconStyles = { background: "rgb(15, 44, 68)" };
   return (
-    <div className="portfolio">
+    <div className="professionaldiv">
       <VerticalTimeline layout={isMobile ? "2-columns" : "1-column-left"}>
         {protimelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
@@ -57,7 +57,7 @@ function Professional() {
   );
 }
 
-export default Professional;
+export default Experience;
 
 const styles = {
   line: { width: "60%" },
