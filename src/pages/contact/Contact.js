@@ -2,12 +2,11 @@ import React from "react";
 import "./Contact.css";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
-import { Box, Button, Stack, TextField } from "@mui/material";
+import { Button } from "@mui/material";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
 import resume from "../../assests/GK_Resume.jpg";
 
 function Contact() {

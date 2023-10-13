@@ -10,7 +10,8 @@ import portfolio from "../../assests/portfolio_landing.jpg";
 
 function Projects() {
   const projectsref = useRef("");
-  const cardsref = useRef("");
+  const cardsref = useRef();
+
   useEffect(() => {
     const scrollHandler = () => {
       const value = projectsref.current;
@@ -24,17 +25,17 @@ function Projects() {
     };
 
     window.addEventListener("scroll", scrollHandler);
-
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
   }, []);
+
   return (
     <div id="projects">
       <div className="projectdiv">
         <h1 ref={projectsref}>PROJECTS</h1>
-        <div class="projectcontainer" ref={cardsref}>
-          <div class="card">
+        <div class="projectcontainer">
+          <div class="card" ref={cardsref}>
             <div class="face face1">
               <div class="content">
                 <img src={wine_store} alt="store landing page" />
@@ -102,5 +103,4 @@ function Projects() {
     </div>
   );
 }
-
 export default Projects;
