@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
+import resume from "../../assests/GK_Resume.jpg";
 
 function Contact() {
   const form = useRef();
@@ -83,7 +84,17 @@ function Contact() {
               variant="outlined"
               sx={{ width: "130px" }}
             >
-              Download CV
+              <a
+                href={resume}
+                download="GK_Resume"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                }}
+              >
+                {" "}
+                Download CV
+              </a>
             </Button>
           </div>
         </div>
@@ -121,7 +132,9 @@ function Contact() {
             sx={{ width: "130px" }}
             type="submit"
           >
-            Send Message
+            <a style={{ textDecoration: "none", color: "white" }}>
+              Send Message
+            </a>
           </Button>
           <ToastContainer />
         </form>

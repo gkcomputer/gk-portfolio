@@ -1,13 +1,14 @@
 let timelineElements = [
   {
-    id: 1,
-    title: "Kairali E.M School",
+    id: 3,
+    title: "Aaditya Degree & PG College",
     location: "Nellore",
-    description: " SSC ",
+    description: "BSC( Computer Applications )",
     buttonText: "",
-    date: "2011 - 2012",
+    date: "2015 - 2018",
     icon: "school",
   },
+
   {
     id: 2,
     title: "KAC Junior College",
@@ -18,12 +19,12 @@ let timelineElements = [
     icon: "school",
   },
   {
-    id: 3,
-    title: "Aaditya Degree & PG College",
+    id: 1,
+    title: "Kairali E.M School",
     location: "Nellore",
-    description: "BSC( Computer Applications )",
+    description: " SSC ",
     buttonText: "",
-    date: "2015 - 2018",
+    date: "2011 - 2012",
     icon: "school",
   },
 ];

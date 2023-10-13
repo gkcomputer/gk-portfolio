@@ -98,7 +98,14 @@ function LandingPage() {
                 FrontEnd Dev :{" "}
                 <span>
                   <Typewriter
-                    words={["HTML", "CSS", "JAVA SCRIPT", "REACT"]}
+                    words={[
+                      "HTML",
+                      "CSS",
+                      "JAVA SCRIPT",
+                      "REACT",
+                      "REDUX",
+                      "REDUX THUNK",
+                    ]}
                     loop={true}
                     cursor
                     cursorStyle="|"
@@ -138,7 +145,9 @@ function LandingPage() {
             <div className="socialIcons">
               <GitHubIcon
                 onClick={() => {
-                  window.open("https://github.com/gkcomputer");
+                  window.open(
+                    "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNxNzXHddNmPlPFVdLfFdhswJMjMjhMCTQRtVCWlgfWrgqCFSnDgWktQFgPQMQLSxFfddV"
+                  );
                 }}
                 ref={(el) => (social.current[0] = el)}
                 sx={{
@@ -154,9 +163,7 @@ function LandingPage() {
 
               <EmailIcon
                 onClick={() => {
-                  window.open(
-                    "https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBncMdTcSwDJkXKRsmrlMcJhjNSBKgTgKlcFrqHGdZjWPZmRQWbZjGPQbbXBVSWBCHVhPlg"
-                  );
+                  window.open("mailto:mvgeethakrishna96@gmail.com");
                 }}
                 ref={(el) => (social.current[2] = el)}
                 sx={{ color: "rgb(16,204,254)", position: "unset" }}

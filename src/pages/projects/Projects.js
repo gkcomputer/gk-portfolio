@@ -4,6 +4,9 @@ import calculator_login from "../../assests/calculator_project_img.jpg";
 import form_login from "../../assests/form_project_img.jpg";
 import Button from "@mui/material/Button";
 import "./Projects.css";
+import wine_store from "../../assests/wine_store_landingPage.jpg";
+import crud from "../../assests/Crud_Landing_Page.jpg";
+import portfolio from "../../assests/portfolio_landing.jpg";
 
 function Projects() {
   const projectsref = useRef("");
@@ -34,15 +37,15 @@ function Projects() {
           <div class="card">
             <div class="face face1">
               <div class="content">
-                <img src={wines_login} />
-                <h3>Store</h3>
+                <img src={wine_store} alt="store landing page" />
+                <h3>STORE</h3>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  cum cumque minus iste veritatis provident at.
+                  This is a simple e-commerce replica. I used api get to fetch
+                  the data from backend.
                 </p>
                 <div class="face2buttons">
                   <Button variant="outlined">Code</Button>
@@ -54,15 +57,16 @@ function Projects() {
           <div class="card">
             <div class="face face1">
               <div class="content">
-                <img src={calculator_login} />
-                <h3>Calculator</h3>
+                <img src={crud} alt="crud" />
+                <h3>CRUD</h3>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  cum cumque minus iste veritatis provident at.
+                  This is a crud application where you can add, edit and delete
+                  products in your cart. You have an option of adding product by
+                  clicking on plus
                 </p>
                 <div class="face2buttons">
                   <Button variant="outlined">Code</Button>
@@ -74,35 +78,17 @@ function Projects() {
           <div class="card">
             <div class="face face1">
               <div class="content">
-                <img src={form_login} />
-                <h3>Form</h3>
+                <img src={portfolio} alt="portfolio" />
+                <h3>PORTFOLIO</h3>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  cum cumque minus iste veritatis provident at.
-                </p>
-                <div class="face2buttons">
-                  <Button variant="outlined">Code</Button>
-                  <Button variant="outlined">Demo</Button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <img src={form_login} />
-                <h3>Form</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  cum cumque minus iste veritatis provident at.
+                  This portfolio website has been made using react js which
+                  makes it more interactive as compared with static websites
+                  like html/css/Javascript/React. It also uses material ui for
+                  styling.
                 </p>
                 <div class="face2buttons">
                   <Button variant="outlined">Code</Button>

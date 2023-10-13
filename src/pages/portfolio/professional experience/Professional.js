@@ -36,7 +36,7 @@ function Professional() {
                 {element.title}
               </h3>
               <h5 className="vertical-timeline-element-subtitle">
-                {element.location}
+                {element.company + " | " + element.location}
               </h5>
               <p id="description">{element.description}</p>
               {showButton && (

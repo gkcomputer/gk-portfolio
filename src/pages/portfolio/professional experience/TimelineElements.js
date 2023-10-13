@@ -1,34 +1,36 @@
 let protimelineElements = [
   {
     id: 1,
-    title: "Frontend Developer",
-    location: "Freelancer",
+    title: "React Developer",
+    company: "TESCO-MOBILE UK",
+    location: "Remote",
     description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
+      "This is admin dashboard which collects the inforamtion of  signal strength of there users and Converting data to a graphical interface, through use of HTML, CSS, and JavaScript,React,Redux. ",
     buttonText: "",
-    date: "June-2020 - Aug-2021",
+    date: "Feb - 2020 | Present",
     icon: "work",
   },
   {
     id: 2,
-    title: "Frontend Developer",
+    title: "Software Engineer",
     location: "Freelancer",
+    company: "Trulia",
     description:
-      "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic.",
+      "Trulia is an American online real estate marketplace. It facilitates buyers and renters to find homes and neighborhoods across the United States through recommendations, local insights, and map overlays that offer details on commute, schools, churches and nearby businesses.",
     buttonText: "",
-    date: "Aug-2021 - Feb-2023",
+    date: "May - 2021 | Feb - 2022",
     icon: "work",
   },
-  {
-    id: 3,
-    title: "Frontend Developer",
-    location: "Freelancer",
-    description:
-      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-    buttonText: "",
-    date: "Feb-2023 - Present",
-    icon: "work",
-  },
+  // {
+  //   id: 3,
+  //   title: "Frontend Developer",
+  //   location: "Freelancer",
+  //   description:
+  //     "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
+  //   buttonText: "",
+  //   date: "Feb-2023 - Present",
+  //   icon: "work",
+  // },
 ];
 
 export default protimelineElements;
