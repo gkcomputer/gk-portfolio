@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "gk-portfolio-8fd41",
-    "gk-port": "gk-portfolio-8fd41"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "resume-testing1"
+  }
 }

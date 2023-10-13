@@ -1,12 +1,13 @@
 .portdiv {
   margin-top: -1px;
+  width: 100%;
+  /* height: 100vh; */
 }
 
 .selecthead {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
   background-color: rgb(15, 44, 68);
 }
@@ -28,5 +29,8 @@
     align-items: center;
     background-color: rgb(15, 44, 68);
     gap: 20px;
+  }
+  .portdiv {
+    width: 100%;
   }
 }

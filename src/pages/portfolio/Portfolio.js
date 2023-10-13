@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
 import Eductaion from "./education/Education";
-import Professional from "./professional experience/Professional";
+import Professional from "./experience/Experience";
 import { NavLink } from "react-router-dom";
+import Experience from "./experience/Experience";
 
 function Portfolio() {
   const [education, setEducation] = useState(true);
@@ -28,7 +29,7 @@ function Portfolio() {
         </p>
       </div>
       {education ? <Eductaion /> : null}
-      {professional ? <Professional /> : null}
+      {professional ? <Experience /> : null}
     </div>
   );
 }

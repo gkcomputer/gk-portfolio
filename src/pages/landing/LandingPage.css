@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .socialIcons {
@@ -48,6 +48,7 @@ body {
 }
 /* .landingdiv {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -55,6 +56,7 @@ body {
   flex-wrap: wrap;
   background-color: rgb(15, 44, 68);
 } */
+
 @import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
 
 .container {
@@ -67,12 +69,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.center {
-  width: 180px;
-  height: 60px;
-  position: absolute;
 }
 
 .btn {

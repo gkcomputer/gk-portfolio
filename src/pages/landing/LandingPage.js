@@ -145,9 +145,7 @@ function LandingPage() {
             <div className="socialIcons">
               <GitHubIcon
                 onClick={() => {
-                  window.open(
-                    "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNxNzXHddNmPlPFVdLfFdhswJMjMjhMCTQRtVCWlgfWrgqCFSnDgWktQFgPQMQLSxFfddV"
-                  );
+                  window.open("https://github.com/gkcomputer");
                 }}
                 ref={(el) => (social.current[0] = el)}
                 sx={{
@@ -163,7 +161,9 @@ function LandingPage() {
 
               <EmailIcon
                 onClick={() => {
-                  window.open("mailto:mvgeethakrishna96@gmail.com");
+                  window.open(
+                    "https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBncMdTcSwDJkXKRsmrlMcJhjNSBKgTgKlcFrqHGdZjWPZmRQWbZjGPQbbXBVSWBCHVhPlg"
+                  );
                 }}
                 ref={(el) => (social.current[2] = el)}
                 sx={{ color: "rgb(16,204,254)", position: "unset" }}

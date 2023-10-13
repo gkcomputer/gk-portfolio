@@ -47,25 +47,36 @@
   text-align: center;
   justify-content: center;
 }
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border-color: whitesmoke !important;
+
+.rightdiv textarea {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: large;
+  background-color: rgb(15, 44, 68);
+  border-color: white;
+  color: white;
 }
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  color: floralwhite !important;
+
+.rightdiv input {
+  height: 40px;
+  outline: none;
+  font-size: large;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(15, 44, 68);
+  color: white;
+  border: 1px solid white;
 }
-.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  color: floralwhite !important;
-}
-.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
-  color: white !important;
-}
-.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
-  color: rgb(16 204 254) !important;
+
+input:hover,
+textarea:focus {
+  outline: none;
 }
 
 @media (max-width: 918px) {
   .contactmain {
     width: 100%;
+    margin-top: -1px;
   }
 
   .contactdiv {

@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
-import { Button, TextField } from "@mui/material";
+import { Box, Button, Stack, TextField } from "@mui/material";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
@@ -81,7 +81,7 @@ function Contact() {
             <Button
               color="primary"
               size="small"
-              variant="outlined"
+              variant="contained"
               sx={{ width: "130px" }}
             >
               <a
@@ -99,36 +99,32 @@ function Contact() {
           </div>
         </div>
         <form className="rightdiv" ref={form}>
-          <TextField
-            id="outlined-basic"
-            fullWidth
-            label="Name"
-            variant="outlined"
-            name="from_name"
+          <input
+            type="name"
             required
-          />
-          <TextField
-            id="outlined-basic"
             fullWidth
-            label="E-mail"
+            name="from_name"
+            placeholder="Name"
+          />
+          <input
             type="email"
-            variant="outlined"
-            name="from_name"
             required
-          />
-          <TextField
             fullWidth
-            id="outlined-multiline-static"
-            label="Message"
-            multiline
-            rows={4}
-            name="message"
-            required
+            name="from_name"
+            placeholder="E-mail"
           />
+          <textarea
+            required
+            fullWidth
+            name="message"
+            placeholder="Message"
+            rows="7"
+            cols="50"
+          ></textarea>
           <Button
             color="primary"
             size="small"
-            variant="outlined"
+            variant="contained"
             sx={{ width: "130px" }}
             type="submit"
           >
@@ -136,6 +132,7 @@ function Contact() {
               Send Message
             </a>
           </Button>
+
           <ToastContainer />
         </form>
       </div>
