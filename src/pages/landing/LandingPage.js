@@ -156,9 +156,7 @@ function LandingPage() {
 
               <LinkedInIcon
                 onClick={() => {
-                  window.open(
-                    "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                  );
+                  window.open("https://www.linkedin.com/in/krishnag21/");
                 }}
                 ref={(el) => (social.current[1] = el)}
                 sx={{ color: "rgb(16,204,254)", position: "unset" }}
