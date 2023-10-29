@@ -3,22 +3,22 @@ let protimelineElements = [
     id: 1,
     title: "React Developer",
     company: "TESCO-MOBILE UK",
-    location: "Remote",
+    location: "Individual Consultant",
     description:
       "This is admin dashboard which collects the inforamtion of  signal strength of there users and Converting data to a graphical interface, through use of HTML, CSS, and JavaScript,React,Redux. ",
     buttonText: "",
-    date: "Feb - 2020 | Present",
+    date: "Aug - 2021 | Present",
     icon: "work",
   },
   {
     id: 2,
     title: "Software Engineer",
-    location: "Freelancer",
+    location: "Individual Consultant",
     company: "Trulia",
     description:
       "Trulia is an American online real estate marketplace. It facilitates buyers and renters to find homes and neighborhoods across the United States through recommendations, local insights, and map overlays that offer details on commute, schools, churches and nearby businesses.",
     buttonText: "",
-    date: "May - 2021 | Feb - 2022",
+    date: "Jul - 2020 | Aug - 2021",
     icon: "work",
   },
   // {

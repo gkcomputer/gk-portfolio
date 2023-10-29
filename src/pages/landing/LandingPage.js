@@ -1,14 +1,15 @@
 import React from "react";
 import "./LandingPage.css";
-import profile from "../../assests/profile_pic.jpg";
+import profile from "../../assests/GK_PROFILE.jpg";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from "gsap/all";
+import { TimelineMax, CSSPlugin } from "gsap/all";
 import { Typewriter } from "react-simple-typewriter";
 import { Tilt } from "react-tilt";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 gsap.registerPlugin(CSSPlugin);
 
@@ -66,7 +67,7 @@ function LandingPage() {
       .fromTo(
         prof.current,
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, ease: "elastic", duration: 1.5 },
+        { y: 0, opacity: 1, ease: "elastic", duration: 2 },
         "<"
       );
   });
@@ -155,15 +156,18 @@ function LandingPage() {
               />
 
               <LinkedInIcon
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                  );
+                }}
                 ref={(el) => (social.current[1] = el)}
                 sx={{ color: "rgb(16,204,254)", position: "unset" }}
               />
 
               <EmailIcon
                 onClick={() => {
-                  window.open(
-                    "https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBncMdTcSwDJkXKRsmrlMcJhjNSBKgTgKlcFrqHGdZjWPZmRQWbZjGPQbbXBVSWBCHVhPlg"
-                  );
+                  window.open("mailto:mvgeethakrishna96@gmail.com");
                 }}
                 ref={(el) => (social.current[2] = el)}
                 sx={{ color: "rgb(16,204,254)", position: "unset" }}
@@ -173,7 +177,12 @@ function LandingPage() {
 
           <div ref={prof} className="profile-picture">
             <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
-              <img src={profile} alt="" width="200px" />
+              <img
+                src={profile}
+                alt="profilePic"
+                width="200px"
+                className="hover-opacity"
+              />
             </Tilt>
           </div>
         </div>

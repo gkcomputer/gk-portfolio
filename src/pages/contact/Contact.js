@@ -7,7 +7,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import resume from "../../assests/GK_Resume.jpg";
+import resume from "../../assests/Krishna_FrontEnd_Resume.pdf";
 
 function Contact() {
   const form = useRef();
@@ -58,21 +58,19 @@ function Contact() {
           <div
             className="mail"
             onClick={() => {
-              window.open(
-                "https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBncMdTcSwDJkXKRsmrlMcJhjNSBKgTgKlcFrqHGdZjWPZmRQWbZjGPQbbXBVSWBCHVhPlg"
-              );
+              window.open("mailto:mvgeethakrishna96@gmail.com");
             }}
           >
             <MailOutlineIcon
               sx={{ position: "unset", color: "rgb(16, 204, 254)" }}
             />
-            <a>
-              <h6> mvgkrishna96@gmail.com</h6>
+            <a href={`mailto:mvgeethakrishna96@gmail.com`}>
+              <h6> mvgeethakrishna96@gmail.com</h6>
             </a>
           </div>
           <div className="mail">
             <PhoneIcon sx={{ position: "unset", color: "rgb(16, 204, 254)" }} />
-            <a href="tel:+9515197516">
+            <a href="tel:9515197516">
               <h6>+91-9515197516</h6>
             </a>
           </div>

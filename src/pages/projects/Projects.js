@@ -1,7 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import wines_login from "../../assests/wines_project_img.jpg";
-import calculator_login from "../../assests/calculator_project_img.jpg";
-import form_login from "../../assests/form_project_img.jpg";
 import Button from "@mui/material/Button";
 import "./Projects.css";
 import wine_store from "../../assests/wine_store_landingPage.jpg";
@@ -35,26 +32,6 @@ function Projects() {
       <div className="projectdiv">
         <h1 ref={projectsref}>PROJECTS</h1>
         <div class="projectcontainer">
-          <div class="card" ref={cardsref}>
-            <div class="face face1">
-              <div class="content">
-                <img src={wine_store} alt="store landing page" />
-                <h3>STORE</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>
-                  This is a simple e-commerce replica. I used api get to fetch
-                  the data from backend.
-                </p>
-                <div class="face2buttons">
-                  <Button variant="outlined">Code</Button>
-                  <Button variant="outlined">Demo</Button>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="card">
             <div class="face face1">
               <div class="content">
@@ -65,13 +42,28 @@ function Projects() {
             <div class="face face2">
               <div class="content">
                 <p>
-                  This is a crud application where you can add, edit and delete
-                  products in your cart. You have an option of adding product by
-                  clicking on plus
+                  This is a CRUD application that allows you to perform actions
+                  like adding, editing, deleting, and reading user details. You
+                  can add new users, edit existing ones, and delete users as
+                  needed.
                 </p>
                 <div class="face2buttons">
-                  <Button variant="outlined">Code</Button>
-                  <Button variant="outlined">Demo</Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      window.open("https://github.com/gkcomputer/CRUD");
+                    }}
+                  >
+                    Code
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      window.open("https://crud-project-35f4d.web.app/");
+                    }}
+                  >
+                    Demo
+                  </Button>
                 </div>
               </div>
             </div>
@@ -86,14 +78,57 @@ function Projects() {
             <div class="face face2">
               <div class="content">
                 <p>
-                  This portfolio website has been made using react js which
-                  makes it more interactive as compared with static websites
-                  like html/css/Javascript/React. It also uses material ui for
-                  styling.
+                  This portfolio website is built using React.js, enhancing
+                  interactivity compared to static websites created with HTML,
+                  CSS, and JavaScript. It features stylish design elements
+                  thanks to the use of Material UI for styling.
                 </p>
                 <div class="face2buttons">
-                  <Button variant="outlined">Code</Button>
-                  <Button variant="outlined">Demo</Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      window.open("https://github.com/gkcomputer/gk-portfolio");
+                    }}
+                  >
+                    Code
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      window.open("/");
+                    }}
+                  >
+                    Demo
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" ref={cardsref}>
+            <div class="face face1">
+              <div class="content">
+                <img src={wine_store} alt="store landing page" />
+                <h3>STORE</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  This is a simple e-commerce replica. I used api get to fetch
+                  the data from backend.
+                </p>
+                <div class="face2buttons">
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      window.open("https://github.com/gkcomputer/Winestore");
+                    }}
+                  >
+                    Code
+                  </Button>
+                  <Button variant="outlined" disabled>
+                    Demo
+                  </Button>
                 </div>
               </div>
             </div>
