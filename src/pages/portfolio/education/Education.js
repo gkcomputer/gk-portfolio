@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "react-vertical-timeline-component/style.min.css";
 import "./Education.css";
 import SchoolIcon from "@mui/icons-material/School";
@@ -62,9 +62,3 @@ function Eductaion() {
 }
 
 export default Eductaion;
-
-const styles = {
-  line: {
-    width: "60px",
-  },
-};

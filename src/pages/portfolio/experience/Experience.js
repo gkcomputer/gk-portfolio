@@ -58,7 +58,3 @@ function Experience() {
 }
 
 export default Experience;
-
-const styles = {
-  line: { width: "60%" },
-};

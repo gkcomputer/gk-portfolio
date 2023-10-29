@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
 import Eductaion from "./education/Education";
-import Professional from "./experience/Experience";
-import { NavLink } from "react-router-dom";
 import Experience from "./experience/Experience";
 
 function Portfolio() {

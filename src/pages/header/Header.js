@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -6,7 +6,6 @@ import { PixiPlugin } from "gsap/PixiPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 import logo from "../../assests/gk_logo.png";
 import TemporaryDrawer from "./Headsidenav";
-import { a } from "react-router-dom";
 
 //without this line, PixiPlugin and MotionPathPlugin may get dropped by your bundler (tree shaking)...
 gsap.registerPlugin(PixiPlugin, MotionPathPlugin);

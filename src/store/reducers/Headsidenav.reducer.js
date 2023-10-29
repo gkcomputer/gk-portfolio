@@ -8,6 +8,7 @@ export const sidenav_reducer = (state = initialstate, action) => {
       return {
         status: !state.status,
       };
+    default:
+      return state;
   }
-  return state;
 };
