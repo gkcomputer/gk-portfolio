@@ -127,7 +127,7 @@ svg {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     margin: 10px;
   }
   .landingdiv {
