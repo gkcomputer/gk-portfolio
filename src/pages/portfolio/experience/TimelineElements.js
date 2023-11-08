@@ -18,7 +18,7 @@ let protimelineElements = [
     description:
       "Trulia is an American online real estate marketplace. It facilitates buyers and renters to find homes and neighborhoods across the United States through recommendations, local insights, and map overlays that offer details on commute, schools, churches and nearby businesses.",
     buttonText: "",
-    date: "FEB - 2020 | MAR - 2022",
+    date: "FEB - 2020 | MAY - 2022",
     icon: "work",
   },
   {
