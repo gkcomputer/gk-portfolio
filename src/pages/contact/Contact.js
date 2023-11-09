@@ -7,7 +7,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import resume from "../../assests/Krishna_FrontEnd_Resume.pdf";
+import resume from "../../assests/GK_FrontEnd_Resume";
 
 function Contact() {
   const form = useRef();
