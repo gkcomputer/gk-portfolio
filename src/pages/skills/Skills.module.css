@@ -15,7 +15,14 @@
   color: antiquewhite;
 }
 
+.progesscontainer {
+  width: 350px;
+}
+
 .skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 80%;
 }
 .skills h2 {
@@ -65,6 +72,19 @@
   border-radius: 5px;
   background: rgb(55, 130, 158);
 }
+.nodeprogress {
+  width: 0%;
+  height: 4px;
+  border-radius: 5px;
+  background: rgb(34, 112, 3);
+}
+.expressprogress {
+  width: 0%;
+  height: 4px;
+  border-radius: 5px;
+  background: rgb(230, 238, 3);
+}
+
 .skillstext {
   animation: bounceInDown 1s;
 }
@@ -115,6 +135,12 @@
 .reactanimation {
   animation: react 1.5s linear forwards;
 }
+.nodeanimation {
+  animation: node 1.5s linear forwards;
+}
+.expressanimation {
+  animation: express 1.5s linear forwards;
+}
 
 @keyframes html {
   100% {
@@ -132,6 +158,16 @@
   }
 }
 @keyframes react {
+  100% {
+    width: 85%;
+  }
+}
+@keyframes node {
+  100% {
+    width: 75%;
+  }
+}
+@keyframes express {
   100% {
     width: 75%;
   }

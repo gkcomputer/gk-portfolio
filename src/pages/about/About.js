@@ -34,11 +34,11 @@ export const About = () => {
         IT field, I have cultivated a robust understanding of frontend
         technologies. I am committed to consistently delivering exceptional
         results and excel in fast-paced, challenging environments. Throughout my
-        career, I have consistently demonstrated proficiency in HTML, CSS,
-        JavaScript, and React. I am a proactive problem solver who relishes
-        tackling new challenges to expand my skill set. I thrive in both
-        independent and collaborative work settings, and I am always
-        enthusiastic about learning from others.
+        career, I have consistently demonstrated proficiency in React, Redux,
+        RTK, Node, Express, JavaScript, HTML, CSS, Material UI. I am a proactive
+        problem solver who relishes tackling new challenges to expand my skill
+        set. I thrive in both independent and collaborative work settings, and I
+        am always enthusiastic about learning from others.
       </div>
     </div>
   );
