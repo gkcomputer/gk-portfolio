@@ -59,21 +59,21 @@ function Contact() {
           <div
             className="mail"
             onClick={() => {
-              window.open("mailto:mvgkrishna96@gmail.com");
+              window.open("mailto:mvgeethakrishna96@gmail.com");
             }}
           >
             <MailOutlineIcon
               sx={{ position: "unset", color: "rgb(16, 204, 254)" }}
             />
-            <a href={`mailto:mvgkrishna96@gmail.com`}>
-              <h6>mvgkrishna96@gmail.com</h6>
+            <a href={`mailto:mvgeethakrishna96@gmail.com`}>
+              <h6>mvgeethakrishna96@gmail.com</h6>
             </a>
           </div>
 
           <div className="mail">
             <PhoneIcon sx={{ position: "unset", color: "rgb(16, 204, 254)" }} />
-            <a href="tel:9160008350">
-              <h6>+91-9160008350</h6>
+            <a href="tel:9515197516">
+              <h6>+91-9515197516</h6>
             </a>
           </div>
           <div className="cvbtn">
