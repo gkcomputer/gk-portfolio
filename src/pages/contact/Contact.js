@@ -8,7 +8,6 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import resume from "../../assests/Krishna_FullStack_Resume.pdf";
-import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 function Contact() {
   const form = useRef();
@@ -59,21 +58,21 @@ function Contact() {
           <div
             className="mail"
             onClick={() => {
-              window.open("mailto:mvgeethakrishna96@gmail.com");
+              window.open("mailto:mvgkrishna96@gmail.com");
             }}
           >
             <MailOutlineIcon
               sx={{ position: "unset", color: "rgb(16, 204, 254)" }}
             />
-            <a href={`mailto:mvgeethakrishna96@gmail.com`}>
-              <h6>mvgeethakrishna96@gmail.com</h6>
+            <a href={`mailto:mvgkrishna96@gmail.com`}>
+              <h6>mvgkrishna96@gmail.com</h6>
             </a>
           </div>
 
           <div className="mail">
             <PhoneIcon sx={{ position: "unset", color: "rgb(16, 204, 254)" }} />
-            <a href="tel:9515197516">
-              <h6>+91-9515197516</h6>
+            <a href="tel:7670895475">
+              <h6>+91-7670895475</h6>
             </a>
           </div>
           <div className="cvbtn">
@@ -85,7 +84,7 @@ function Contact() {
             >
               <a
                 href={resume}
-                download="GK_Resume"
+                download="Krishna_FullStack_Resume"
                 style={{
                   textDecoration: "none",
                   color: "white",

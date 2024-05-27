@@ -3,7 +3,7 @@ let timelineElements = [
     id: 3,
     title: "Aaditya Degree & PG College",
     location: "Nellore",
-    description: "BSC( Computer Applications )",
+    description: "BSC( Computer Science )",
     buttonText: "",
     date: "2015 - 2018",
     icon: "school",

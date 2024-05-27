@@ -30,7 +30,7 @@ export const About = () => {
 
       <div className="paragraph" ref={paraRef}>
         I am a highly motivated and dedicated professional with a genuine
-        passion for application development. With 4 years of experience in the
+        passion for application development. With 3.5 years of experience in the
         IT field, I have cultivated a robust understanding of frontend
         technologies. I am committed to consistently delivering exceptional
         results and excel in fast-paced, challenging environments. Throughout my

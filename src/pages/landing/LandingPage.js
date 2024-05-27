@@ -95,16 +95,19 @@ function LandingPage() {
             </div>
             <div ref={developer} className="developer">
               <p>
-                FrontEnd Dev :{" "}
+                FullStack Dev :{" "}
                 <span>
                   <Typewriter
                     words={[
+                      "REACT JS",
+                      "REDUX",
+                      "RTK",
+                      "NODE JS",
+                      "EXPRESS",
+                      "MONGO DB",
+                      "JAVA SCRIPT",
                       "HTML",
                       "CSS",
-                      "JAVA SCRIPT",
-                      "REACT",
-                      "REDUX",
-                      "REDUX THUNK",
                     ]}
                     loop={true}
                     cursor
